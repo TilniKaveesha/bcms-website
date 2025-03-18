@@ -59,4 +59,14 @@ fetch('../data/achievements.json')
         });
     })
     .catch(error => console.error('Error loading achievement data:', error));
+ //ydb popup
+ var popclickupelement = document.getElementById("morachboxes");
+ var popupelement = document.getElementById("popachyd"); 
+ var popelemntcls=document.getElementById("closebtnofthis");
+ popclickupelement.onclick = function () {
+     popupelement.style.display = "block"; 
+ };
+ popelemntcls.onclick = function () {
+    popupelement.style.display = "none"; 
+};
  

@@ -4,12 +4,14 @@ body,
 html {
     height: 100% !important;
     scroll-behavior: smooth;
+ 
 }
 
 body {
     background-color: black !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 300 !important;
+    overflow-x:hidden ;
 }
 
 /* width */
@@ -41,6 +43,7 @@ body {
 }
 
 .top-bar {
+    width: 100vw;
     display: flex;
 }
 
@@ -143,29 +146,13 @@ display: none;
 }
 
 
-
 .nav-item a:hover {
     color: #969696;
     text-shadow: 0 0 3px #565555, 0 0 7px #3d3939;
 }
 
-.nav-item a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(150, 150, 150, 0.62);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-    box-shadow: 0 0 3px #565555, 0 0 7px #3d3939;
-}
 
-.nav-item a:hover::after {
-    transform: scaleX(1);
-}
+
 
 .navbar .nav-link{
     color: rgba(255,255,255,.75);
@@ -188,12 +175,6 @@ display: none;
     background-color: black;
     padding: 80px 0 30px;
 }
-
-#projects{
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 
 h2.section-title {
     text-align: center;
@@ -861,3 +842,602 @@ footer{
         margin: 4px;
     }
 }
+
+/* Projects Start */
+
+#projects{
+    min-height: 100vh;
+}
+
+
+.projectsBox{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+    
+}
+
+.projectFirstBox table,tr,th,td{
+   margin-top: 15px;
+   text-align: center;
+   padding: 5px 5px 5px 5px;
+   font-size: 20px;
+}
+
+.projectFirstBox h1,h2,h3,h4,h5,h6{
+    color: #969696;
+}
+
+
+.projectFirstBox img{
+    width: 150px;
+    margin-top: 50px;
+    position: relative;
+    left: 35%;
+    transform: translate(-35%);
+}
+
+.projectTwoBox{
+    border-left: 1px solid #969696;
+    padding: 0px 0px 0px 15px;
+}
+
+.projectTwoBox img{
+    width: 350px;
+}
+.projectTwoBox h5{
+    width: 450px;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.btnMore{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: auto;
+    background-color: transparent;
+    color: #969696;
+    outline: none;
+    border: none;
+    float: right;
+}
+
+.btnMore{
+    margin-top: 35px;
+}
+
+.moreCover{
+    
+    grid-template-columns: 100px;
+    grid-template-rows: auto auto;
+}
+
+.firstMore{
+    font-size: 20px;
+}
+
+.secondMore{
+    font-size: 13px;
+}
+
+.thirdMore{
+    font-size: 40px;
+}
+/* Projects End*/
+
+/* Achievement Start */
+#achievements{
+    min-height:100vh;
+}
+
+.achBox{
+    width:100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.achBoxes{
+    width: 300px;
+    height: 500px;
+    border-radius: 30px;
+    color: white;
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent , #4e4e4e);
+    user-select: none;
+    cursor: pointer;
+    box-shadow: -1px -1px 26px -39px rgba(255,255,255,1);
+}
+
+.achBoxes:nth-child(2){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent , #B483FF);
+}
+
+.achBoxes:nth-child(3){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent , #8c5f10);
+}
+
+.achBoxes:nth-child(4){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent ,#56EF7D);
+}
+
+
+.achBoxes:nth-child(5){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent ,#EFC349);
+}
+
+
+
+.achBoxesImg{
+    width: 300px;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+}
+
+
+.achBoxesImg img {
+    border-radius: 30px 30px 0px 0px;
+}
+
+
+
+.achBoxesDes{
+    width: 280px;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.achBoxesImg img{
+    width: 100%;
+    
+}
+
+.morachboxes{
+    position: absolute;
+    color: #ffffff;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(39, 31, 31,0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 30px 0px 0px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.morachboxes:hover{
+    background-color: rgba(39, 31, 31,0.8);
+}
+
+.popachyd{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.popachydtitle{
+    color: white;
+    padding: 15px 15px 15px 15px;
+    height: 10vh;
+}
+
+.popachydimages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#closebtnofthis{
+    float: right;
+    cursor: pointer;
+    user-select: none;
+}
+
+swiper-container {
+   width: 50vw;
+   height: 100%;
+}
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+/* Achievement End */
+
+/* merch start */
+#merch{
+    min-height: 100vh;
+}
+
+.merchboxfirst{
+    width:900px ;
+    height: 420px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: relative;
+    left: 10%;
+    transform: translate(-10%,0%);
+}
+
+.merchBox{
+    width:900px ;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 400px 490px;
+    grid-template-rows:420px;
+}
+
+.merchBoximg{
+    width: 400px;
+    height: 420px;
+}
+
+.merchBocDescription{
+    width: 490px;
+    height: 420px;
+    padding: 10px;
+}
+
+.merchBoximg img{
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#buyNowbtn{
+
+    margin-top: 80px;
+    margin-bottom: 5px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #969696;
+    border-radius: 10px;
+    
+}
+
+#buyNowbtn a{
+    color:#969696 ;
+    text-decoration: none;
+}
+
+
+#buyNowbtn:hover {
+    box-shadow: inset 0 -100px 0 0 #969696;
+}
+  
+#buyNowbtn:active {
+    transform: scale(0.9);
+}
+
+#buyNowbtn:hover a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#joinNowBtn{
+    -webkit-appearance: none;
+    appearance: none;
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #d72b59;
+    border-radius: 43px;
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    outline: 0;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#joinNowBtn a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.contactDetail{
+    width: 100vw;
+}
+
+.table{
+    width: 1090px !important;
+}
+
+@media (max-width: 768px){
+.projectsBox{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    
+} 
+.projectTwoBox{
+    padding-top: 35px;
+    border-left: none;
+    border-top: none;
+    font-size: 16px;
+}
+
+.projectTwoBox h5{
+    width: 300px;
+}
+
+.projectTwoBox img{
+    width: 150px;
+}
+
+.merchboxfirst{
+    width:400px ;
+    min-height: 840px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    left: 18%;
+}
+
+.merchBox{
+    width:400px ;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows:420px 420px;
+}
+
+.merchBoximg{
+    width: 380px;
+    height: 420px;
+}
+
+.merchBocDescription{
+    width: 380px;
+    height: 420px;
+    padding: 10px;
+}
+
+.merchBoximg img{
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.table{
+    width: 720px !important;
+}
+
+}
+
+
+@media (max-width: 426px){
+    .projectFirstBox table,tr,th,td{
+        font-size: 18px;
+     }
+
+     .projectTwoBox h5{
+        width: 250px;
+        text-align: justify;
+        margin-top: 25px;
+    }
+
+    
+.merchboxfirst{
+    width:280px ;
+    min-height: 840px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    left: 0%;
+}
+
+.merchBox{
+    width:280px ;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows:420px 420px;
+}
+
+.merchBoximg{
+    width: 260px;
+    height: 420px;
+}
+
+.merchBocDescription{
+    width: 260px;
+    height: 420px;
+    padding: 10px;
+}
+
+.merchBoximg img{
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.table{
+    width:300px !important;
+    display: none;
+}
+
+
+
+/* Achievement Start */
+#achievements{
+    min-height:100vh;
+}
+
+.achBox{
+    width:100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.achBoxes{
+    width: 250px;
+    height: 500px;
+    border-radius: 30px;
+    color: white;
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent , #4e4e4e);
+    user-select: none;
+    cursor: pointer;
+    box-shadow: -1px -1px 26px -39px rgba(255,255,255,1);
+}
+
+.achBoxes:nth-child(2){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent , #B483FF);
+}
+
+.achBoxes:nth-child(3){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent , #8c5f10);
+}
+
+.achBoxes:nth-child(4){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent ,#56EF7D);
+}
+
+
+.achBoxes:nth-child(5){
+    background-image: linear-gradient(to bottom,#969696,transparent,transparent ,#EFC349);
+}
+
+
+
+.achBoxesImg{
+    width: 250px;
+    height: 300px;
+   
+    display: flex;
+    justify-content: center;
+}
+
+
+.achBoxesImg img {
+    border-radius: 30px 30px 0px 0px;
+}
+
+
+
+.achBoxesDes{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.morachboxes{
+    position: absolute;
+    color: #ffffff;
+    width: 250px;
+    height: 300px;
+    background-color: rgba(39, 31, 31,0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 30px 0px 0px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+/* 
+.popachyd{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.popachydtitle{
+    color: white;
+    padding: 15px 15px 15px 15px;
+    height: 10vh;
+}
+
+.popachydimages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#closebtnofthis{
+    float: right;
+    cursor: pointer;
+    user-select: none;
+}
+
+swiper-container {
+   width: 50vw;
+   height: 100%;
+}
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+/* Achievement End */
+
+}
+
+
+
+

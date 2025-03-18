@@ -4140,7 +4140,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 1440px) {
   .row-flowchart-one{
-    width: 880px;
+    width: 850px;
     height: 5px;
     background-color: white;
     position: relative;
@@ -4158,14 +4158,14 @@ fieldset:disabled .btn {
 
 @media (max-width: 1440px) {
   .row-flowchart-one{
-    width: 760px;
+    width: 745px;
     height: 5px;
     background-color: white;
     position: relative;
     left:50%;  
 }
 .row-flowchart-two{
-  width: 380px;
+  width: 375px;
   height: 5px;
   background-color: white;
   position: relative;

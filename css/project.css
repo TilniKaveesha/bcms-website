@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.MainContent{
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    color: #969696;
+}
+
+#navheader{
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    padding: 15px 15px;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+
+#navheader a img{
+    width: 100px;
+    
+}
+
+.nav-link-dis{
+    display: inline-block ;
+}
+
+
+#drop{
+    display: none;
+}
+
+#navheader a {
+    color: white;
+}
+
+#navheader .navbar-btn{
+    display: none;
+}
+
+#menuW{
+    float: right;
+    display: block;
+}
+
+#menuW ul li{
+    display: inline-block;
+    padding: 15px 15px;
+    
+}
+
+#menuW ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.firstprojectsShower{
+    margin-top: 20vh;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+}
+
+
+.firstprojectsShowerTitle{
+    overflow: hidden;
+    padding: 15px 15px;
+}
+
+.main__action{
+    position: relative;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin-top: -50px;
+}
+
+
+.main__scroll-text {
+    color: #969696;
+    text-align: center;
+  }
+
+.main__scroll {
+    text-decoration: none;
+    color: #969696;
+}
+
+
+
+
+.main__scroll-box{
+    width: 80px;
+}
+  
+  .main__action .main__scroll-box {
+    animation: scroll-down 3s infinite;
+  }
+  
+  /* Animate scroll icon */
+  @keyframes scroll-down {
+    0%, 100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    35% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    70% {
+      transform: translateY(-1rem);
+      opacity: 0;
+    }
+  }
+
+
+#ptitle{
+    font-size: 30px;
+}
+
+#pstitle{
+    user-select: none;
+    cursor: pointer;
+}
+
+#pstitle span a{
+    text-decoration: none;
+    color: #969696;
+}
+
+#firstprojectsShowercontent{
+    
+    padding: 15px 15px 15px 15px;
+}
+
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: auto;
+   
+  }
+  .ProjectsBoxesOne swiper-slide img{
+    border-radius: 30px;
+  }
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    
+  }
+
+.bgImageProject{
+    position: absolute;
+    width: 100%;
+}
+
+.bgImg{
+    width: 50%;
+    opacity: 0.2;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    filter: drop-shadow(1px 5px 10px maroon);
+}
+
+.secondprojectsShower{
+    width: 100vw;
+    height: 100vh;
+}
+
+.secondprojectsShower{
+    padding: 15px 15px 15px 15px;
+}
+
+.secondProjectShowerOuterBox{
+    width:100%;
+    height: 100%;
+    background-color: #0E0E0E;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 100%;
+}
+
+.secondProjectShowerOuterBoxTwo{
+    padding: 15px 15px 15px 15px ;
+}
+
+.MySwiper {
+    height: 50%;
+    width: 100%;
+  }
+
+  .MySwipe swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+
+/* Responsive Web */
+@media only screen and (max-width: 769px) {
+    
+#menu{
+    display: inline-block !important;
+    float: right;
+}
+
+#menuW{
+    display: none;
+}
+
+#navheader{
+    width: 100vw;
+    height: auto;
+    padding: 15px 15px;
+}
+
+
+#navheader a img{
+    width: 100px;
+    
+}
+
+#drop{
+    display: none ;
+    width: 100vw;
+   height: 100vh;
+}
+
+
+
+#navheader a {
+    color: white;
+}
+
+
+
+#drop ul li{
+    display: block;
+    padding: 15px 15px;
+    text-align: center  ;
+
+}
+
+.nav-link-dis{
+    display: none;
+}
+
+.nav-link-dist{
+    float: right;
+    display: inline-block !important;
+}
+
+#drop ul li a{
+    
+    text-decoration: none;
+    
+    font-size: 20px;
+}
+    
+    
+    swiper-slide {
+        width: 300px;
+    }
+}
